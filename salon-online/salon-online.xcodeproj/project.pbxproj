@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		09E1F680E0172E5FEBEEC3D1 /* libPods-salon-online.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 926B3460A61F5C472E4E0440 /* libPods-salon-online.a */; };
 		9F4A7B73206CDA0600FF997D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4A7B72206CDA0600FF997D /* AppDelegate.m */; };
-		9F4A7B76206CDA0600FF997D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4A7B75206CDA0600FF997D /* ViewController.m */; };
+		9F4A7B76206CDA0600FF997D /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4A7B75206CDA0600FF997D /* RootViewController.m */; };
 		9F4A7B79206CDA0600FF997D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4A7B77206CDA0600FF997D /* Main.storyboard */; };
 		9F4A7B7B206CDA0600FF997D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F4A7B7A206CDA0600FF997D /* Assets.xcassets */; };
 		9F4A7B7E206CDA0600FF997D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4A7B7C206CDA0600FF997D /* LaunchScreen.storyboard */; };
 		9F4A7B81206CDA0600FF997D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4A7B80206CDA0600FF997D /* main.m */; };
+		9F90FA89206CFDF200B30ADC /* SalonsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA88206CFDF200B30ADC /* SalonsTableViewController.m */; };
+		9F90FA8D206CFF4200B30ADC /* Salon.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA8C206CFF4200B30ADC /* Salon.m */; };
+		9F90FA91206D084900B30ADC /* SalonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA90206D084900B30ADC /* SalonTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,13 +26,19 @@
 		9F4A7B6E206CDA0600FF997D /* salon-online.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "salon-online.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F4A7B71206CDA0600FF997D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9F4A7B72206CDA0600FF997D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9F4A7B74206CDA0600FF997D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9F4A7B75206CDA0600FF997D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9F4A7B74206CDA0600FF997D /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		9F4A7B75206CDA0600FF997D /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		9F4A7B78206CDA0600FF997D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F4A7B7A206CDA0600FF997D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F4A7B7D206CDA0600FF997D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F4A7B7F206CDA0600FF997D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F4A7B80206CDA0600FF997D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9F90FA87206CFDF200B30ADC /* SalonsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SalonsTableViewController.h; sourceTree = "<group>"; };
+		9F90FA88206CFDF200B30ADC /* SalonsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SalonsTableViewController.m; sourceTree = "<group>"; };
+		9F90FA8B206CFF4200B30ADC /* Salon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Salon.h; sourceTree = "<group>"; };
+		9F90FA8C206CFF4200B30ADC /* Salon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Salon.m; sourceTree = "<group>"; };
+		9F90FA8F206D084900B30ADC /* SalonTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SalonTableViewCell.h; sourceTree = "<group>"; };
+		9F90FA90206D084900B30ADC /* SalonTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SalonTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,17 +91,87 @@
 		9F4A7B70206CDA0600FF997D /* salon-online */ = {
 			isa = PBXGroup;
 			children = (
+				9F90FA82206CF6C900B30ADC /* App */,
+				9F90FA81206CF6BB00B30ADC /* Storyboard */,
+			);
+			path = "salon-online";
+			sourceTree = "<group>";
+		};
+		9F90FA81206CF6BB00B30ADC /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9F4A7B77206CDA0600FF997D /* Main.storyboard */,
+				9F4A7B7C206CDA0600FF997D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		9F90FA82206CF6C900B30ADC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9F90FA8A206CFF2700B30ADC /* Models */,
+				9F90FA84206CF6F100B30ADC /* Assets */,
+				9F90FA83206CF6E300B30ADC /* Controllers */,
 				9F4A7B71206CDA0600FF997D /* AppDelegate.h */,
 				9F4A7B72206CDA0600FF997D /* AppDelegate.m */,
-				9F4A7B74206CDA0600FF997D /* ViewController.h */,
-				9F4A7B75206CDA0600FF997D /* ViewController.m */,
-				9F4A7B77206CDA0600FF997D /* Main.storyboard */,
-				9F4A7B7A206CDA0600FF997D /* Assets.xcassets */,
-				9F4A7B7C206CDA0600FF997D /* LaunchScreen.storyboard */,
 				9F4A7B7F206CDA0600FF997D /* Info.plist */,
 				9F4A7B80206CDA0600FF997D /* main.m */,
 			);
-			path = "salon-online";
+			path = App;
+			sourceTree = "<group>";
+		};
+		9F90FA83206CF6E300B30ADC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9F90FA86206CFDC100B30ADC /* Salons */,
+				9F90FA85206CFDB900B30ADC /* Root */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9F90FA84206CF6F100B30ADC /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				9F4A7B7A206CDA0600FF997D /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		9F90FA85206CFDB900B30ADC /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				9F4A7B74206CDA0600FF997D /* RootViewController.h */,
+				9F4A7B75206CDA0600FF997D /* RootViewController.m */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		9F90FA86206CFDC100B30ADC /* Salons */ = {
+			isa = PBXGroup;
+			children = (
+				9F90FA8E206D083100B30ADC /* Cell */,
+				9F90FA87206CFDF200B30ADC /* SalonsTableViewController.h */,
+				9F90FA88206CFDF200B30ADC /* SalonsTableViewController.m */,
+			);
+			path = Salons;
+			sourceTree = "<group>";
+		};
+		9F90FA8A206CFF2700B30ADC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F90FA8B206CFF4200B30ADC /* Salon.h */,
+				9F90FA8C206CFF4200B30ADC /* Salon.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9F90FA8E206D083100B30ADC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9F90FA8F206D084900B30ADC /* SalonTableViewCell.h */,
+				9F90FA90206D084900B30ADC /* SalonTableViewCell.m */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,9 +299,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F4A7B76206CDA0600FF997D /* ViewController.m in Sources */,
+				9F4A7B76206CDA0600FF997D /* RootViewController.m in Sources */,
+				9F90FA89206CFDF200B30ADC /* SalonsTableViewController.m in Sources */,
+				9F90FA8D206CFF4200B30ADC /* Salon.m in Sources */,
 				9F4A7B81206CDA0600FF997D /* main.m in Sources */,
 				9F4A7B73206CDA0600FF997D /* AppDelegate.m in Sources */,
+				9F90FA91206D084900B30ADC /* SalonTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,7 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "salon-online/Info.plist";
+				INFOPLIST_FILE = "salon-online/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.exodia.salon-online";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -372,7 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "salon-online/Info.plist";
+				INFOPLIST_FILE = "salon-online/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.exodia.salon-online";
 				PRODUCT_NAME = "$(TARGET_NAME)";
