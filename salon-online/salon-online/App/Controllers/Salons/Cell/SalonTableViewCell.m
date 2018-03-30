@@ -39,6 +39,10 @@
     self.star3.image = salon.Rating.integerValue >= 3 ? [UIImage imageNamed:@"icons8-star-full-50"] : [UIImage imageNamed:@"icons8-star-empty-50"];
     self.star4.image = salon.Rating.integerValue >= 4 ? [UIImage imageNamed:@"icons8-star-full-50"] : [UIImage imageNamed:@"icons8-star-empty-50"];
     self.star5.image = salon.Rating.integerValue >= 5 ? [UIImage imageNamed:@"icons8-star-full-50"] : [UIImage imageNamed:@"icons8-star-empty-50"];
+    
+    if(salon.SalonDesc != nil) {
+        self.salonDesc.text = salon.SalonDesc;
+    }
 }
 
 @end

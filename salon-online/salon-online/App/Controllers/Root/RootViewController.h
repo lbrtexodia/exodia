@@ -10,6 +10,7 @@
 
 @interface RootViewController : UIViewController
 
+- (IBAction)setMyLocation:(id)sender;
 
 @end
 

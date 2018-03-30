@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SalonService.h"
+#import "SalonCategory.h"
 
 @interface Salon : NSObject
 
@@ -16,5 +18,7 @@
 @property (nonatomic, strong) NSString* LocationDesc;
 @property (nonatomic, strong) NSString* OpeningHourDesc;
 @property (nonatomic, strong) NSString* CancellationDesc;
+@property (nonatomic, strong) NSString* SalonDesc;
+@property (nonatomic, strong) NSArray* Services;
 
 @end

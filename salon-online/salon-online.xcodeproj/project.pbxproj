@@ -17,6 +17,12 @@
 		9F90FA89206CFDF200B30ADC /* SalonsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA88206CFDF200B30ADC /* SalonsTableViewController.m */; };
 		9F90FA8D206CFF4200B30ADC /* Salon.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA8C206CFF4200B30ADC /* Salon.m */; };
 		9F90FA91206D084900B30ADC /* SalonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA90206D084900B30ADC /* SalonTableViewCell.m */; };
+		9F90FA94206E3DF200B30ADC /* SalonServicesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA93206E3DF200B30ADC /* SalonServicesTableViewController.m */; };
+		9F90FA98206E3E6900B30ADC /* SalonHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA97206E3E6900B30ADC /* SalonHeaderView.m */; };
+		9F90FA9B206E5CF000B30ADC /* SalonService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA9A206E5CF000B30ADC /* SalonService.m */; };
+		9F90FA9E206E5D2500B30ADC /* SalonCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FA9D206E5D2500B30ADC /* SalonCategory.m */; };
+		9F90FAA1206E658400B30ADC /* SalonSectionHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FAA0206E658400B30ADC /* SalonSectionHeaderTableViewCell.m */; };
+		9F90FAA4206E68DC00B30ADC /* SalonBookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90FAA3206E68DC00B30ADC /* SalonBookTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +45,18 @@
 		9F90FA8C206CFF4200B30ADC /* Salon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Salon.m; sourceTree = "<group>"; };
 		9F90FA8F206D084900B30ADC /* SalonTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SalonTableViewCell.h; sourceTree = "<group>"; };
 		9F90FA90206D084900B30ADC /* SalonTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SalonTableViewCell.m; sourceTree = "<group>"; };
+		9F90FA92206E3DF200B30ADC /* SalonServicesTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SalonServicesTableViewController.h; sourceTree = "<group>"; };
+		9F90FA93206E3DF200B30ADC /* SalonServicesTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SalonServicesTableViewController.m; sourceTree = "<group>"; };
+		9F90FA96206E3E6900B30ADC /* SalonHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SalonHeaderView.h; sourceTree = "<group>"; };
+		9F90FA97206E3E6900B30ADC /* SalonHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SalonHeaderView.m; sourceTree = "<group>"; };
+		9F90FA99206E5CF000B30ADC /* SalonService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SalonService.h; sourceTree = "<group>"; };
+		9F90FA9A206E5CF000B30ADC /* SalonService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SalonService.m; sourceTree = "<group>"; };
+		9F90FA9C206E5D2500B30ADC /* SalonCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SalonCategory.h; sourceTree = "<group>"; };
+		9F90FA9D206E5D2500B30ADC /* SalonCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SalonCategory.m; sourceTree = "<group>"; };
+		9F90FA9F206E658400B30ADC /* SalonSectionHeaderTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SalonSectionHeaderTableViewCell.h; sourceTree = "<group>"; };
+		9F90FAA0206E658400B30ADC /* SalonSectionHeaderTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SalonSectionHeaderTableViewCell.m; sourceTree = "<group>"; };
+		9F90FAA2206E68DC00B30ADC /* SalonBookTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SalonBookTableViewCell.h; sourceTree = "<group>"; };
+		9F90FAA3206E68DC00B30ADC /* SalonBookTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SalonBookTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,9 +167,12 @@
 		9F90FA86206CFDC100B30ADC /* Salons */ = {
 			isa = PBXGroup;
 			children = (
+				9F90FA95206E3E4F00B30ADC /* View */,
 				9F90FA8E206D083100B30ADC /* Cell */,
 				9F90FA87206CFDF200B30ADC /* SalonsTableViewController.h */,
 				9F90FA88206CFDF200B30ADC /* SalonsTableViewController.m */,
+				9F90FA92206E3DF200B30ADC /* SalonServicesTableViewController.h */,
+				9F90FA93206E3DF200B30ADC /* SalonServicesTableViewController.m */,
 			);
 			path = Salons;
 			sourceTree = "<group>";
@@ -161,6 +182,10 @@
 			children = (
 				9F90FA8B206CFF4200B30ADC /* Salon.h */,
 				9F90FA8C206CFF4200B30ADC /* Salon.m */,
+				9F90FA99206E5CF000B30ADC /* SalonService.h */,
+				9F90FA9A206E5CF000B30ADC /* SalonService.m */,
+				9F90FA9C206E5D2500B30ADC /* SalonCategory.h */,
+				9F90FA9D206E5D2500B30ADC /* SalonCategory.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -170,8 +195,21 @@
 			children = (
 				9F90FA8F206D084900B30ADC /* SalonTableViewCell.h */,
 				9F90FA90206D084900B30ADC /* SalonTableViewCell.m */,
+				9F90FA9F206E658400B30ADC /* SalonSectionHeaderTableViewCell.h */,
+				9F90FAA0206E658400B30ADC /* SalonSectionHeaderTableViewCell.m */,
+				9F90FAA2206E68DC00B30ADC /* SalonBookTableViewCell.h */,
+				9F90FAA3206E68DC00B30ADC /* SalonBookTableViewCell.m */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		9F90FA95206E3E4F00B30ADC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9F90FA96206E3E6900B30ADC /* SalonHeaderView.h */,
+				9F90FA97206E3E6900B30ADC /* SalonHeaderView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,10 +337,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F90FA9B206E5CF000B30ADC /* SalonService.m in Sources */,
+				9F90FA9E206E5D2500B30ADC /* SalonCategory.m in Sources */,
 				9F4A7B76206CDA0600FF997D /* RootViewController.m in Sources */,
+				9F90FA94206E3DF200B30ADC /* SalonServicesTableViewController.m in Sources */,
 				9F90FA89206CFDF200B30ADC /* SalonsTableViewController.m in Sources */,
 				9F90FA8D206CFF4200B30ADC /* Salon.m in Sources */,
+				9F90FAA4206E68DC00B30ADC /* SalonBookTableViewCell.m in Sources */,
 				9F4A7B81206CDA0600FF997D /* main.m in Sources */,
+				9F90FAA1206E658400B30ADC /* SalonSectionHeaderTableViewCell.m in Sources */,
+				9F90FA98206E3E6900B30ADC /* SalonHeaderView.m in Sources */,
 				9F4A7B73206CDA0600FF997D /* AppDelegate.m in Sources */,
 				9F90FA91206D084900B30ADC /* SalonTableViewCell.m in Sources */,
 			);
