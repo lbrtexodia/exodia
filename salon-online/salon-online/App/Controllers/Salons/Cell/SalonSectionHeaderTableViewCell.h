@@ -12,5 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *serviceName;
 @property (weak, nonatomic) IBOutlet UIView *bottomDivider;
+@property (weak, nonatomic) IBOutlet UIImageView *expandImage;
 
 @end

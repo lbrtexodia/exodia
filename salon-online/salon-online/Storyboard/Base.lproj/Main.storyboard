@@ -568,9 +568,10 @@
                                         <constraint firstItem="EWA-Xj-7yA" firstAttribute="centerY" secondItem="8da-d5-l4F" secondAttribute="centerY" id="sH9-pm-uwY"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="bottomDivider" destination="5NB-x3-aCz" id="3Xy-as-ax3"/>
+                                    <outlet property="expandImage" destination="EWA-Xj-7yA" id="Ahx-wz-5ff"/>
                                     <outlet property="serviceName" destination="ys6-Mc-dqw" id="Wla-c2-hJa"/>
                                 </connections>
                             </tableViewCell>

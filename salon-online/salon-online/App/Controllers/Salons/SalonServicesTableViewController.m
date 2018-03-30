@@ -12,7 +12,7 @@
 #import "SalonSectionHeaderTableViewCell.h"
 #import "SalonBookTableViewCell.h"
 
-@interface SalonServicesTableViewController ()
+@interface SalonServicesTableViewController () <UIGestureRecognizerDelegate>
 
 @end
 
@@ -58,8 +58,16 @@
 //    }
 //}
 
-#pragma mark - Table view data source
+- (void)handleHeaderTap:(UIGestureRecognizer *)sender {
+    UIView *view = sender.view;
+    
+    SalonService* service = [self.salon.Services objectAtIndex:view.tag];
+    service.expanded = !service.expanded;
+    
+    [self.tableView reloadData];
+}
 
+#pragma mark - Table view data source
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     if(self.salon != nil) {
         return self.salon.Services.count + 1;
@@ -70,10 +78,13 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if(section == 0) {
         return 1;
+    } else {
+        SalonService* service = [self.salon.Services objectAtIndex:(section - 1)];
+        if(service.expanded) {
+            return service.Categories.count;
+        }
+        return 0;
     }
-    
-    SalonService* service = [self.salon.Services objectAtIndex:(section - 1)];
-    return service.Categories.count;
 }
 
 - (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
@@ -102,7 +113,23 @@
         
         SalonService* service = [self.salon.Services objectAtIndex:(section - 1)];
         cell.serviceName.text = service.Name;
+        cell.tag = (section - 1);
         
+        if(service.hasGesture == NO) {
+            UITapGestureRecognizer *gr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleHeaderTap:)];
+            [gr setDelegate:self];
+            gr.numberOfTouchesRequired = 1;
+            gr.numberOfTapsRequired = 1;
+            [cell addGestureRecognizer:gr];
+        }
+        
+        if(service.expanded) {
+            cell.expandImage.image = [UIImage imageNamed:@"icons8-collapse-arrow-filled-50"];
+            cell.bottomDivider.hidden = NO;
+        } else {
+            cell.expandImage.image = [UIImage imageNamed:@"icons8-expand-arrow-filled-50"];
+            cell.bottomDivider.hidden = YES;
+        }
         return cell;
     }
 }
