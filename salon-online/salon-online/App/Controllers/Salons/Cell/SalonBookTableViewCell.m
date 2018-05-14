@@ -22,5 +22,8 @@
 }
 
 - (IBAction)bookNow:(id)sender {
+    if([self.delegate respondsToSelector:@selector(didTapBook:)]) {
+        [self.delegate didTapBook:self];
+    }
 }
 @end

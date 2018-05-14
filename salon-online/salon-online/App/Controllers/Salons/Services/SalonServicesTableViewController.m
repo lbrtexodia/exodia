@@ -12,7 +12,7 @@
 #import "SalonSectionHeaderTableViewCell.h"
 #import "SalonBookTableViewCell.h"
 
-@interface SalonServicesTableViewController () <UIGestureRecognizerDelegate>
+@interface SalonServicesTableViewController () <UIGestureRecognizerDelegate, SalonBookTableViewCellDelegate>
 
 @end
 
@@ -80,10 +80,11 @@
         return 1;
     } else {
         SalonService* service = [self.salon.Services objectAtIndex:(section - 1)];
-        if(service.expanded) {
+        // NOTE: remove to make simple
+//        if(service.expanded) {
             return service.Categories.count;
-        }
-        return 0;
+//        }
+//        return 0;
     }
 }
 
@@ -115,13 +116,14 @@
         cell.serviceName.text = service.Name;
         cell.tag = (section - 1);
         
-        if(service.hasGesture == NO) {
-            UITapGestureRecognizer *gr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleHeaderTap:)];
-            [gr setDelegate:self];
-            gr.numberOfTouchesRequired = 1;
-            gr.numberOfTapsRequired = 1;
-            [cell addGestureRecognizer:gr];
-        }
+        // NOTE: remove to make simple
+//        if(service.hasGesture == NO) {
+//            UITapGestureRecognizer *gr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleHeaderTap:)];
+//            [gr setDelegate:self];
+//            gr.numberOfTouchesRequired = 1;
+//            gr.numberOfTapsRequired = 1;
+//            [cell addGestureRecognizer:gr];
+//        }
         
         if(service.expanded) {
             cell.expandImage.image = [UIImage imageNamed:@"icons8-collapse-arrow-filled-50"];
@@ -149,7 +151,8 @@
         cell.serviceName.text = category.Name;
         cell.cost.text = [NSString stringWithFormat:@"%ld SEK", (long)category.Cost.integerValue];
         cell.desc.text = category.Desc;
-        
+        cell.delegate = self;
+
         if(indexPath.row == (service.Categories.count - 1)) {
             cell.bottomDivider.hidden = YES;
         }
@@ -192,14 +195,19 @@
 }
 */
 
-/*
-#pragma mark - Navigation
 
+#pragma mark - Navigation
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+//    SalonServicesTableViewController* c = (SalonServicesTableViewController*)[segue destinationViewController];
+//    c.salon = [self.salons objectAtIndex:self.selectedPath.row];
 }
-*/
+
+#pragma mark - SalonBookTableViewCellDelegate
+-(void)didTapBook:(SalonBookTableViewCell *)cell {
+    [self performSegueWithIdentifier:@"bookSchedule" sender:self];
+}
 
 @end

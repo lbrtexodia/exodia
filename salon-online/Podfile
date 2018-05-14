@@ -5,4 +5,5 @@ target 'salon-online' do
     pod 'AFNetworking', '~> 3.0'
     pod 'AWSS3'
     pod 'Firebase/Core', '= 4.5.0'
+    pod 'FSCalendar'
 end

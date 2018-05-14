@@ -27,11 +27,12 @@
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 257.0;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.title = @"Salon";
     // setup right bar button
-    UIImage *myImage = [UIImage imageNamed:@"icons8-target-48"];
-    myImage = [myImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    UIBarButtonItem *btn = [[UIBarButtonItem alloc] initWithImage:myImage style:UIBarButtonItemStylePlain target:self action:@selector(setMyLocation:)];
-    self.navigationItem.rightBarButtonItem = btn;
+//    UIImage *myImage = [UIImage imageNamed:@"icons8-target-48"];
+//    myImage = [myImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//    UIBarButtonItem *btn = [[UIBarButtonItem alloc] initWithImage:myImage style:UIBarButtonItemStylePlain target:self action:@selector(setMyLocation:)];
+//    self.navigationItem.rightBarButtonItem = btn;
 
     [self createMockData];
     
@@ -221,6 +222,10 @@
     salon5.SalonDesc = @"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis pellentesque vehicula. Nullam tincidunt sapien at tortor maximus ultrices. Praesent erat urna, auctor non orci sit amet, eleifend viverra elit.";
     [self.salons addObject:salon5];
     salon5.Services = [NSArray arrayWithObjects:service11, nil];
+    
+    if(self.salons.count > 0) {
+        self.title = [NSString stringWithFormat:@"Salon (%lu)", (unsigned long)self.salons.count];
+    }
 }
 
 @end
