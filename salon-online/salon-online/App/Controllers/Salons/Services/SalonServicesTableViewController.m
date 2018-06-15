@@ -12,6 +12,7 @@
 #import "SalonSectionHeaderTableViewCell.h"
 #import "SalonBookTableViewCell.h"
 
+
 @interface SalonServicesTableViewController () <UIGestureRecognizerDelegate, SalonBookTableViewCellDelegate>
 
 @end
